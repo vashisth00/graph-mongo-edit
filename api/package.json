@@ -4,7 +4,7 @@
   "scripts": {
     "start": "NODE_ENV=production ts-node -T -r dotenv/config src/server",
     "dev": "NODE_ENV=development ts-node-dev --respawn --transpile-only -r dotenv/config -T src/server",
- "build": "NODE_ENV=production ts-node -T -r dotenv/config src/server build --output public"
+ "build": "NODE_ENV=production ts-node -T -r dotenv/config src/server build"
   },
   "license": "MIT",
   "dependencies": {
