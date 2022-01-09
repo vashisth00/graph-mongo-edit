@@ -48,7 +48,7 @@ export const resolvers: Resolvers = {
         throw new ValidationError('Email already registered');
       }
       if (await UserCollection.findOneByUsername(values.username)) {
-        throw new ValidationError('Username already taken');
+        throw new ValidationError('Username dd taken');
       }
       const user: UserModel = {
         _id: new ObjectID(),
