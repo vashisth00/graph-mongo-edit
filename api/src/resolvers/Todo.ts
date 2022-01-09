@@ -38,7 +38,7 @@ export const resolvers: Resolvers = {
         throw new UserInputError('Todo not found');
       }
       if (!todo.userId.equals(user._id)) {
-        throw new UserInputError('You are not allowed to access this Todo');
+        throw new UserInputError('You d not allowed to access this Todo');
       }
 
       await publishEvent(_getTodoRemovedKey(user), {
